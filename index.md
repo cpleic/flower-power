@@ -20,7 +20,7 @@ title: Leaderboard Flores da Melhor Carrinha
       let tableHTML = '<table><tr><th>Posição</th><th>Nome do Pételeiro</th><th>Pontuação</th></tr>';
 
       entries.forEach((entry, index) => {
-        const nome = entry[0]; /
+        const nome = entry[0]; 
         const pontuacao = entry[1]; 
         tableHTML += `<tr><td>${index + 1}</td><td>${nome}</td><td>${pontuacao}</td></tr>`;
       });
