@@ -51,7 +51,7 @@ title: Leaderboard Flores da Melhor Carrinha
           </div>
 
           <div>
-            🌼 Faltam <strong>12047348733242875639086359</strong> dias para os caloiros deixarem de ser <strong> burros </strong> 
+            🦨 Faltam <strong>12047348733242875639086359</strong> dias para os caloiros deixarem de ser <strong> burros </strong> 
           </div>
 
           
