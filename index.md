@@ -9,7 +9,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 <script>
   const sheetId = '2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m'; // substitui com o ID da tua sheet
-  const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m/pubhtml`;
+  const url = `https://spreadsheets.google.com/feeds/list/2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m/1471616984/public/values?alt=json`;
 
   fetch(url)
     .then(res => res.json())
