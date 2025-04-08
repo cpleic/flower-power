@@ -9,6 +9,8 @@ title: Leaderboard Flores da Melhor Carrinha
 
 <div id="leaderboard"></div>
 
+<div id="contador" style="margin-top: 40px; background: #fdf6ff; border-radius: 16px; padding: 20px; font-size: 1.2em; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+
 
 <script>
   const sheetID = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o';
