@@ -11,7 +11,7 @@ title: Leaderboard Flores da Melhor Carrinha
 <script>
   const sheetID = '2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m';
   const range = 'Leaderboard'; 
-  const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=YOUR_API_KEY`;
+  const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=AIzaSyDoUCZ4ZOdOZXy0OUGxGr5bW34VyqzP50U`;
 
   fetch(sheetURL)
     .then(response => response.json())
