@@ -20,7 +20,6 @@ title: Leaderboard Flores da Melhor Carrinha
     .then(data => {
       const entries = data.values;
 
-      // Tabela principal (começa na linha 1 até onde há nomes)
       const leaderboardData = entries.slice(1).filter(row => row[0] && !isNaN(row[1]));
       leaderboardData.sort((a, b) => b[1] - a[1]);
       const top10 = leaderboardData.slice(0, 10);
@@ -32,17 +31,14 @@ title: Leaderboard Flores da Melhor Carrinha
       html += '</table>';
       document.getElementById('leaderboard').innerHTML = html;
 
-      // Buscar os valores de Faltam (Pétalas) e Faltam (Flores)
       const faltamPetalas = entries[1][5]; // F2
       const faltamFlores = entries[1][6];  // G2
 
-      // Calcular dias até 20 de maio
       const hoje = new Date();
       const vinteMaio = new Date(hoje.getFullYear(), 4, 20);
       if (hoje > vinteMaio) vinteMaio.setFullYear(vinteMaio.getFullYear() + 1);
       const diasRestantes = Math.ceil((vinteMaio - hoje) / (1000 * 60 * 60 * 24));
 
-      // Mostrar tudo
       const infoHTML = `
         <div style="margin-top: 30px; font-size: 1.3em; text-align: center;">
           <div style="margin-bottom: 10px;">
