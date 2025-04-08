@@ -44,11 +44,17 @@ title: Leaderboard Flores da Melhor Carrinha
       const infoHTML = `
         <div style="margin-top: 30px; font-size: 1.3em; text-align: center;">
           <div style="margin-bottom: 10px;">
-            ⏳ <strong>Faltam ${diasRestantes} dias</strong> para o glorioso dia <strong>20 de maio</strong>!
+            ⏳ <strong>Faltam ${diasRestantes} dias</strong> para o glorioso Cortejo</strong>!
           </div>
           <div>
-            🌼 <strong>${faltamFlores} flores</strong> e 🌸 <strong>${faltamPetalas} pétalas</strong> para atingir o objetivo!
+            🌼 <strong>Faltam ${faltamFlores} flores</strong> e 🌸 <strong>${faltamPetalas} pétalas</strong> para atingir o objetivo!
           </div>
+
+          <div>
+            🌼 Faltam 12047348733242875639086359 dias para os caloiros deixarem de ser <strong> burros </strong> 
+          </div>
+
+          
         </div>
       `;
       document.getElementById('contador').innerHTML = infoHTML;
