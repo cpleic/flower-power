@@ -39,3 +39,9 @@ title: Leaderboard Flores da Melhor Carrinha
     })
     .catch(error => console.error('Erro ao carregar os dados: ', error));
 </script>
+
+<style>
+  header, .header, .page-header {
+    display: none;
+  }
+</style>
