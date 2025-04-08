@@ -5,7 +5,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 # 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
 
-<ul id="leaderboard">A enrolar...</ul>
+<ul id="leaderboard"></ul>
 
 <script>
   const sheetId = '2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m'; // substitui com o ID da tua sheet
