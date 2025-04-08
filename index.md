@@ -67,4 +67,13 @@ title: Leaderboard Flores da Melhor Carrinha
   header, .header, .page-header {
     display: none;
   }
+
+    h1, h2, h3, h4, h5, h6 {
+    color: #1e40af !important;
+  }
+
+  a {
+    color: #2563eb !important;
+  }
+  
 </style>
