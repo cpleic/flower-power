@@ -18,8 +18,9 @@ title: Leaderboard Flores da Melhor Carrinha
     .then(response => response.json())
     .then(data => {
 
-      console.log(entries);
+      
       const entries = data.values.slice(1);
+      console.log(data.values);
       
       entries.sort((a, b) => b[1] - a[1]); // Ordena em ordem decrescente com base na pontuação
 
