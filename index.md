@@ -13,16 +13,25 @@ title: Leaderboard Flores da Melhor Carrinha
   const sheetID = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o';
   const range = 'Leaderboard'; 
   const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=AIzaSyDoUCZ4ZOdOZXy0OUGxGr5bW34VyqzP50U`;
-
+  
+  
   fetch(sheetURL)
     .then(response => response.json())
     .then(data => {
 
       
       const entries = data.values.slice(1);
-      console.log(data.values);
       
-      entries.sort((a, b) => b[1] - a[1]); // Ordena em ordem decrescente com base na pontuação
+      const flowersGoal = entries.find(entry => entry[0] === 'Objetivo de Flores');
+      console.log(flowersGoal);
+      const petalasGoal = entries.find(entry => entry[0] === 'Objetivo de Pétalas');
+      console.log(petalasGoal);
+      const petalasLeft = entries.find(entry => entry[0] === 'Faltam (Pétalas)');
+      console.log(petalasLeft);
+      const flowersLeft = entries.find(entry => entry[0] === 'Faltam (Flores)');
+      console.log(flowersLeft);
+                  
+      entries.sort((a, b) => b[1] - a[1]); 
 
       const top10Entries = entries.slice(0, 10);
 
