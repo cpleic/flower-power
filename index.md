@@ -8,8 +8,8 @@ title: Leaderboard Flores da Melhor Carrinha
 <ul id="leaderboard">A enrolar...</ul>
 
 <script>
-  const sheetId = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o'; // substitui com o ID da tua sheet
-  const url = `[https://spreadsheets.google.com/feeds/list/14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o/od6/public/values?alt=json](https://docs.google.com/spreadsheets/d/e/2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m/pubhtml)`;
+  const sheetId = '2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m'; // substitui com o ID da tua sheet
+  const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m/pubhtml`;
 
   fetch(url)
     .then(res => res.json())
