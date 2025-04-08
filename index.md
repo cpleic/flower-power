@@ -69,7 +69,7 @@ title: Leaderboard Flores da Melhor Carrinha
   }
 
     h1, h2, h3, h4, h5, h6 {
-    color: #1e40af !important;
+    color: #0077b6 !important;
   }
 
   a {
