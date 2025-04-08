@@ -3,7 +3,7 @@ layout: default
 title: Leaderboard Flores da Melhor Carrinha 
 ---
 
-# 🌸 Flower Counter de LEIC 🌸
+# 🌸 ** Flower Counter de LEIC ** 🌸
 
 ## 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
 
