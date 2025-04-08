@@ -17,17 +17,15 @@ title: Leaderboard Flores da Melhor Carrinha
   fetch(sheetURL)
     .then(response => response.json())
     .then(data => {
-      // Remover o cabeçalho e garantir que temos uma lista de dados
+
+      console.log(entries);
       const entries = data.values.slice(1);
       
-      // Ordena os dados pela pontuação (assumindo que a pontuação está na segunda coluna, índice 1)
       entries.sort((a, b) => b[1] - a[1]); // Ordena em ordem decrescente com base na pontuação
 
-      // Pega apenas os 10 primeiros
       const top10Entries = entries.slice(0, 10);
 
-      // Gerar a tabela HTML
-      let tableHTML = '<table><tr><th>Posição</th><th>Nome do Pételeiro</th><th>Pontuação</th></tr>';
+      let tableHTML = '<table><tr><th>Posição</th><th>Nome do Pételeiro</th><th>Pétalas</th></tr>';
 
       top10Entries.forEach((entry, index) => {
         const nome = entry[0]; 
