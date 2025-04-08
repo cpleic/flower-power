@@ -7,7 +7,7 @@ title: Leaderboard Flores da Melhor Carrinha
 # 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
 
 <script>
-  const sheetID = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o';
+  const sheetID = '2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m';
   const sheetGID = '0'; 
   const sheetURL = `https://spreadsheets.google.com/feeds/list/${sheetID}/${sheetGID}/public/values?alt=json`;
 
