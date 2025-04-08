@@ -6,29 +6,5 @@ title: Leaderboard Flores da Melhor Carrinha
 
 # 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
 
-<ul id="leaderboard"></ul>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkxv4bxLhdbY-5rV0wRPbUMMNuzNkeqKTOORnVCfoYwdFxfBu7UlOe9k7RAEhSE2AiUv1PYgviJI6m/pubhtml?gid=1471616984&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600"></iframe>
 
-
-  <script>
-    const sheetId = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o';
-    const url = `https://spreadsheets.google.com/feeds/list/14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o/od6/public/values?alt=json`;
-
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        const entries = data.feed.entry;
-        const leaderboard = document.getElementById('leaderboard');
-
-        const players = entries.map(entry => ({
-          name: entry.gsx$name.$t,
-          score: parseInt(entry.gsx$score.$t)
-        }));
-
-        // Ordena e mostra os 10 primeiros
-        players.sort((a, b) => b.score - a.score).slice(0, 10).forEach(player => {
-          const li = document.createElement('li');
-          li.textContent = `${player.name} - ${player.score} pontos`;
-          leaderboard.appendChild(li);
-        });
-      });
-  </script>
