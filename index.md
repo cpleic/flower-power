@@ -42,7 +42,7 @@ title: Leaderboard Flores da Melhor Carrinha
       const diasRestantes = Math.ceil((vinteMaio - hoje) / (1000 * 60 * 60 * 24));
 
       const infoHTML = `
-        <div style="margin-top: 30px; font-size: 1.3em; text-align: center;">
+        <div style="margin-top: 30px; font-size: 1.3em; text-align: left;">
           <div style="margin-bottom: 10px;">
             ⏳ <strong>Faltam ${diasRestantes} dias</strong> para o glorioso Cortejo</strong>!
           </div>
@@ -51,7 +51,7 @@ title: Leaderboard Flores da Melhor Carrinha
           </div>
 
           <div>
-            🌼 Faltam 12047348733242875639086359 dias para os caloiros deixarem de ser <strong> burros </strong> 
+            🌼 Faltam <strong>12047348733242875639086359</strong> dias para os caloiros deixarem de ser <strong> burros </strong> 
           </div>
 
           
