@@ -21,15 +21,6 @@ title: Leaderboard Flores da Melhor Carrinha
 
       
       const entries = data.values.slice(1);
-      
-      const flowersGoal = entries.find(entry => entry[0] === 'Objetivo de Flores');
-      console.log(flowersGoal);
-      const petalasGoal = entries.find(entry => entry[0] === 'Objetivo de Pétalas');
-      console.log(petalasGoal);
-      const petalasLeft = entries.find(entry => entry[0] === 'Faltam (Pétalas)');
-      console.log(petalasLeft);
-      const flowersLeft = entries.find(entry => entry[0] === 'Faltam (Flores)');
-      console.log(flowersLeft);
                   
       entries.sort((a, b) => b[1] - a[1]); 
 
