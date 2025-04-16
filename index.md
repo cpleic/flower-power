@@ -11,10 +11,15 @@ title: Leaderboard Flores da Melhor Carrinha
   <source src="assets/Europe - The Final Countdown (Official Video).mp3" type="audio/mp3">
 </audio>
 
+<div class="lado-banner lado-esquerdo"></div>
+<div class="lado-banner lado-direito"></div>
+
 
 <div id="leaderboard"></div>
 
 <div id="contador" style=" background: #90E0EF; border-radius: 16px; font-size: 1.2em; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+
+
 
 
 <script>
@@ -77,7 +82,8 @@ title: Leaderboard Flores da Melhor Carrinha
 
 
 <style>
-  header, .header, .page-header {
+
+header, .header, .page-header {
     display: none;
   }
 
@@ -88,5 +94,33 @@ title: Leaderboard Flores da Melhor Carrinha
   a {
     color: #2563eb !important;
   }
+
+.lado-banner {
+  position: fixed;
+  top: 0; 
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.lado-esquerdo {
+  left: 0;
+  background-image: url('assets/noronha.jpg');
+}
+
+.lado-direito {
+  right: 0;
+  background-image: url('assets/noronha.jpg');
+}
+
+body, #leaderboard, #contador {
+  position: relative;
+  z-index: 1;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
   
 </style>
