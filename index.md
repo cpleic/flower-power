@@ -101,9 +101,10 @@ header, .header, .page-header {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 300px; /* Ajuste conforme necessário */
+    width: 500px; /* Ajuste conforme necessário */
     z-index: 0;
   }
+  .lado-esquerdo { left: 0; }
   .lado-direito { right: 0; }
   .lado-banner img {
     height: 100%;
