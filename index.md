@@ -7,7 +7,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 ## 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
 
-<audio controls autoplay>
+<audio autoplay loop hidden>
   <source src="assets/Europe - The Final Countdown (Official Video).mp3" type="audio/mp3">
 </audio>
 
