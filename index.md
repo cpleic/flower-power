@@ -29,7 +29,7 @@ title: Leaderboard Flores da Melhor Carrinha
 <script>
   const sheetID = '14PnbkAb4wUjOORFmwI6ThG-WUsuDq6tdIMgSTexcs0o';
   const range = 'Leaderboard'; 
-  const sheetURL = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=AIzaSyDoUCZ4ZOdOZXy0OUGxGr5bW34VyqzP50U`;
+  const sheetURL = https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=AIzaSyDoUCZ4ZOdOZXy0OUGxGr5bW34VyqzP50U;
 
   fetch(sheetURL)
     .then(response => response.json())
@@ -42,7 +42,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
       let html = '<table><tr><th>Posição</th><th>Nome do Pételeiro</th><th>Pontuação</th></tr>';
       top10.forEach((row, i) => {
-        html += `<tr><td>${i + 1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`;
+        html += <tr><td>${i + 1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>;
       });
       html += '</table>';
       document.getElementById('leaderboard').innerHTML = html;
@@ -55,7 +55,7 @@ title: Leaderboard Flores da Melhor Carrinha
       if (hoje > vinteMaio) vinteMaio.setFullYear(vinteMaio.getFullYear() + 1);
       const diasRestantes = Math.ceil((vinteMaio - hoje) / (1000 * 60 * 60 * 24));
 
-      const infoHTML = `
+      const infoHTML = 
         <div style="margin-top: 30px; font-size: 1.3em; text-align: left;">
           <div style="margin-bottom: 10px;">
             ⏳ <strong>Faltam ${diasRestantes} dias</strong> para o glorioso Cortejo</strong>!
@@ -70,7 +70,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
           
         </div>
-      `;
+      ;
       document.getElementById('contador').innerHTML = infoHTML;
     })
     .catch(error => console.error('Erro ao carregar os dados: ', error));
