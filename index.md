@@ -101,10 +101,9 @@ header, .header, .page-header {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 150px; /* Ajuste conforme necessário */
+    width: 300px; /* Ajuste conforme necessário */
     z-index: 0;
   }
-  .lado-esquerdo { left: 0; }
   .lado-direito { right: 0; }
   .lado-banner img {
     height: 100%;
@@ -119,10 +118,7 @@ header, .header, .page-header {
 
 @media (max-width: 767px) {
   .lado-banner { display: none; }
-  body, #leaderboard {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+
 }
 
 #contador {
