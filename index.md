@@ -11,9 +11,12 @@ title: Leaderboard Flores da Melhor Carrinha
   <source src="assets/Europe - The Final Countdown (Official Video).mp3" type="audio/mp3">
 </audio>
 
-<div class="container-geral">
-  <img class="faixa-lateral esquerda" src="assets/noronhaClique.png" alt="Faixa Esquerda" />
-  
+<div class="lado-banner lado-esquerdo">
+  <img src="assets/noronhaClique.png" alt="Banner Esquerdo" />
+</div>
+<div class="lado-banner lado-direito">
+  <img src="assets/noronhaClique.png" alt="Banner Direito" />
+</div>
 
 
 <div id="leaderboard"></div>
@@ -81,68 +84,51 @@ title: Leaderboard Flores da Melhor Carrinha
 
 </script>
 
+
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: sans-serif;
+
+header, .header, .page-header {
+    display: none;
   }
 
-  .container-geral {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
+    h1, h2, h3, h4, h5, h6 {
+    color: #0077b6 !important;
   }
 
-  .faixa-lateral {
-    width: 200px;
-    height: 100vh;
-    object-fit: cover;
-    flex-shrink: 0;
+  a {
+    color: #2563eb !important;
   }
 
-  .esquerda {
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
+.lado-banner {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 500px;  
+  z-index: 0;
+}
 
-  .direita {
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
+.lado-esquerdo {
+  left: 0;
+}
 
-  .conteudo-central {
-    margin: 0 auto;
-    padding: 40px 20px;
-    max-width: 800px;
-    z-index: 1;
-    position: relative;
-    background: white;
-    min-height: 100vh;
-  }
+.lado-direito {
+  right: 0;
+}
 
-  #leaderboard, #contador {
-    margin-top: 30px;
-  }
+.lado-banner img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto 0;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
+body, #leaderboard, #contador {
+  position: relative;
+  z-index: 1;
+  margin-left: 130px;
+  margin-right: 130px;
+}
 
-  th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-
-  th {
-    background-color: #f0f0f0;
-  }
+  
 </style>
-
