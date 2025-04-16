@@ -107,12 +107,12 @@ header, .header, .page-header {
 
 .lado-esquerdo {
   left: 0;
-  background-image: url('/flower-power/assets/noronha.jpg');
+  background-image: url('flower-power/assets/noronha.jpg');
 }
 
 .lado-direito {
   right: 0;
-  background-image: url('/flower-power/assets/noronha.jpg');
+  background-image: url('flower-power/assets/noronhaClique.png');
 }
 
 body, #leaderboard, #contador {
