@@ -116,12 +116,23 @@ header, .header, .page-header {
   object-fit: contain; /* Mantém a proporção sem cortes */
 }
 
-body, #leaderboard, #contador {
+body, #leaderboard, {
   position: relative;
   z-index: 1;
   margin-left: 200px; /* Ajuste conforme a largura da sua imagem esquerda */
   margin-right: 200px; /* Ajuste conforme a largura da sua imagem direita */
 
+}
+
+#contador {
+  background: #90E0EF;
+  border-radius: 16px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: fit-content; /* Ajusta à largura do conteúdo */
+  max-width: 100%; /* Evita overflow */
 }
 
   
