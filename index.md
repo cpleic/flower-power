@@ -5,7 +5,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 # 🌸 **Flower Counter de LEIC** 🌸
 
-## 🏆 Top 10 Pételeiros (Fazedores de Pétalas duh)
+## 🏆 Top 10 Pételeiros 
 
 <audio id="bg-music" loop hidden>
   <source src="assets/Europe - The Final Countdown (Official Video).mp3" type="audio/mp3">
@@ -119,20 +119,21 @@ header, .header, .page-header {
 body, #leaderboard, {
   position: relative;
   z-index: 1;
-  margin-left: 200px; /* Ajuste conforme a largura da sua imagem esquerda */
-  margin-right: 200px; /* Ajuste conforme a largura da sua imagem direita */
+  margin-left: 200px; 
+  margin-right: 200px; 
 
 }
 
 #contador {
   background: #90E0EF;
   border-radius: 16px;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 20px;
+  margin: 30px 0;
   font-size: 1.2em;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: fit-content; /* Ajusta à largura do conteúdo */
-  max-width: 100%; /* Evita overflow */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 800px; /* Largura máxima (ajuste conforme necessário) */
+  box-sizing: border-box; /* Garante que o padding não some com a largura */
 }
 
   
