@@ -21,7 +21,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 <div id="leaderboard"></div>
 
-<div id="contador" style=" background: #90E0EF; border-radius: 16px; font-size: 1.2em; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+<div id="contador"></div>
 
 
 
@@ -102,7 +102,7 @@ header, .header, .page-header {
   position: fixed;
   top: 0;
   height: 100vh; /* Ocupa 100% da altura da tela */
-  width: auto;   /* Largura automática (original da imagem) */
+  width: auto;   /* Largura original da imagem */
   z-index: 0;
 }
 
@@ -115,16 +115,17 @@ header, .header, .page-header {
 }
 
 .lado-banner img {
-  height: 100%;  /* Altura total da tela */
-  width: auto;   /* Largura original (sem redimensionar) */
-  object-fit: contain; /* Mantém proporções sem cortes */
+  height: 100vh; /* Altura total da tela */
+  width: auto;   /* Largura proporcional à altura (sem distorcer) */
+  object-fit: contain; /* Mantém a proporção sem cortes */
 }
 
 body, #leaderboard, #contador {
   position: relative;
   z-index: 1;
-  margin-left: 200px; /* Ajuste conforme a largura da sua imagem */
-  margin-right: 200px; /* Ajuste conforme a largura da sua imagem */
+  margin-left: 200px; /* Ajuste conforme a largura da sua imagem esquerda */
+  margin-right: 200px; /* Ajuste conforme a largura da sua imagem direita */
+  max-width: calc(100% - 400px); /* Evita overflow horizontal */
 }
 
   
