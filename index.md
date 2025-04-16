@@ -116,9 +116,11 @@ header, .header, .page-header {
 }
 
 .lado-banner img {
-  width: 100%;  
-  height: 100%; 
-  object-fit: cover;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto 0;
 }
 
 body, #leaderboard, #contador {
