@@ -102,8 +102,9 @@ header, .header, .page-header {
   position: fixed;
   top: 0;
   height: 100%;
-  width: 100%;  
+  width: 150px;  
   z-index: 0;
+  overflow: hidden;
 }
 
 .lado-esquerdo {
@@ -115,18 +116,16 @@ header, .header, .page-header {
 }
 
 .lado-banner img {
-  max-height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
 }
 
 body, #leaderboard, #contador {
   position: relative;
   z-index: 1;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 160px;  
+  margin-right: 160px; 
 }
 
   
