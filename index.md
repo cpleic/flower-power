@@ -14,14 +14,10 @@ title: Leaderboard Flores da Melhor Carrinha
 <div class="lado-banner lado-esquerdo">
   <img src="assets/noronhaClique.png" alt="Banner Esquerdo" />
 </div>
-<div class="lado-banner lado-direito">
-  <img src="assets/noronhaClique.png" alt="Banner Direito" />
-</div>
-
 
 <div id="leaderboard"></div>
 
-<div id="contador"></div>
+<div id="contador" style=" background: #90E0EF; border-radius: 16px; font-size: 1.2em; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
 
 
 
@@ -125,7 +121,7 @@ body, #leaderboard, #contador {
   z-index: 1;
   margin-left: 200px; /* Ajuste conforme a largura da sua imagem esquerda */
   margin-right: 200px; /* Ajuste conforme a largura da sua imagem direita */
-  max-width: calc(100% - 400px); /* Evita overflow horizontal */
+
 }
 
   
