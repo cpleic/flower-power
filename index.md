@@ -102,7 +102,7 @@ header, .header, .page-header {
   position: fixed;
   top: 0;
   height: 100%;
-  width: 500px;  
+  width: 100%;  
   z-index: 0;
 }
 
