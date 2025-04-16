@@ -94,34 +94,35 @@ header, .header, .page-header {
     color: #2563eb !important;
   }
 
-.lado-banner {
-  position: fixed;
-  top: 0;
-  height: 100vh; /* Ocupa 100% da altura da tela */
-  width: auto;   /* Largura original da imagem */
-  z-index: 0;
+
+/* Mostra banners APENAS em PC (telas maiores) */
+@media (min-width: 768px) {
+  .lado-banner {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 150px; /* Ajuste conforme necessário */
+    z-index: 0;
+  }
+  .lado-esquerdo { left: 0; }
+  .lado-direito { right: 0; }
+  .lado-banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  body, #leaderboard {
+    margin-left: 170px; 
+    margin-right: 170px;
+  }
 }
 
-.lado-esquerdo {
-  left: 0;
-}
-
-.lado-direito {
-  right: 0;
-}
-
-.lado-banner img {
-  height: 100vh; /* Altura total da tela */
-  width: auto;   /* Largura proporcional à altura (sem distorcer) */
-  object-fit: contain; /* Mantém a proporção sem cortes */
-}
-
-body, #leaderboard, {
-  position: relative;
-  z-index: 1;
-  margin-left: 200px; 
-  margin-right: 200px; 
-
+@media (max-width: 767px) {
+  .lado-banner { display: none; }
+  body, #leaderboard {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 #contador {
@@ -131,9 +132,9 @@ body, #leaderboard, {
   margin: 30px 0;
   font-size: 1.2em;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 100%; /* Ocupa toda a largura disponível */
-  max-width: 800px; /* Largura máxima (ajuste conforme necessário) */
-  box-sizing: border-box; /* Garante que o padding não some com a largura */
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
 }
 
   
