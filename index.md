@@ -17,7 +17,7 @@ title: Leaderboard Flores da Melhor Carrinha
 
 <div id="leaderboard"></div>
 
-<div id="contador" style=" background: #90E0EF; border-radius: 16px; font-size: 1.2em; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+<div id="contador" style=""></div>
 
 
 
