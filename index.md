@@ -101,10 +101,9 @@ header, .header, .page-header {
 .lado-banner {
   position: fixed;
   top: 0;
-  height: 100%;
-  width: 150px;  
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  width: auto;   /* Largura automática (original da imagem) */
   z-index: 0;
-  overflow: hidden;
 }
 
 .lado-esquerdo {
@@ -116,16 +115,16 @@ header, .header, .page-header {
 }
 
 .lado-banner img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; 
+  height: 100%;  /* Altura total da tela */
+  width: auto;   /* Largura original (sem redimensionar) */
+  object-fit: contain; /* Mantém proporções sem cortes */
 }
 
 body, #leaderboard, #contador {
   position: relative;
   z-index: 1;
-  margin-left: 160px;  
-  margin-right: 160px; 
+  margin-left: 200px; /* Ajuste conforme a largura da sua imagem */
+  margin-right: 200px; /* Ajuste conforme a largura da sua imagem */
 }
 
   
