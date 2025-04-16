@@ -101,7 +101,7 @@ header, .header, .page-header {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 500px; /* Ajuste conforme necessário */
+    width: auto; /* Ajuste conforme necessário */
     z-index: 0;
   }
   .lado-esquerdo { left: 0; }
@@ -112,8 +112,8 @@ header, .header, .page-header {
     object-fit: cover;
   }
   body, #leaderboard {
-    margin-left: 170px; 
-    margin-right: 170px;
+    margin-left: 200px; 
+    margin-right: 200px;
   }
 }
 
